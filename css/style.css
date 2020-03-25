@@ -3,7 +3,8 @@
 /* font-family: 'Raleway', sans-serif; */
 /** bleu clair header -> #AEB3FF
     bleu foncé -> #5d3eff  
-    gris clair -> grey98 */
+    gris clair -> grey98 
+    orane bouton -> #f4ca70*/
 
     
 /*******************
@@ -23,9 +24,7 @@
 	/* banniere */
 	.imgbanniere img {height: 125px;}
 	.contenue-banniere h1 {margin-top:-8%;}
-	h1#bienvenue{color: red; }
-    /*#btn-contact{font-size: 95%;}*/
-
+	
 	/* a propos */
     .formations{ margin-left: 15%;}     
           
@@ -227,6 +226,7 @@ textarea {
 /* validation formulaire*/
 input:valid{ border: 1px solid green; }
 input:invalid { border: 1px solid blue;}
+
 /* footer */
 .legende {
 	margin-top: 3%;
