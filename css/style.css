@@ -1,0 +1,244 @@
+@charset "UTF-8";
+
+/* font-family: 'Raleway', sans-serif; */
+/** bleu clair header -> #AEB3FF
+    bleu foncé -> #5d3eff  
+    gris clair -> grey98 */
+
+    
+/*******************
+*	GENERAL
+*******************/
+/* Media query */
+@media (max-width: 767px){
+
+    a, h1, h4, h5, h6, span, p, li, footer{ font-size: 90%;}
+    h2, h3{margin: 0; font-size: 120%;}
+    section{ font-size: 82%; }
+    button.btn{ font-size: 110%; letter-spacing: 10;}
+
+    /*nav menu*/
+    a.link{font-size: 70%;}
+
+	/* banniere */
+	.imgbanniere img {height: 125px;}
+	.contenue-banniere h1 {margin-top:-8%;}
+	h1#bienvenue{color: red; }
+    /*#btn-contact{font-size: 95%;}*/
+
+	/* a propos */
+    .formations{ margin-left: 15%;}     
+          
+	/* contact */
+    form.formulaire-contact{ width: 250px; }
+    form.formulaire-contact textarea{width: 250px;}           
+}
+@media(min-width:768px){}
+@media(min-width:992px){}
+@media(min-width:1200px){}
+
+body, html { padding: 0; margin: 0;}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	background-color: white;
+}
+
+a, a:hover {text-decoration: none;}
+
+h2, h4{color:white; }
+h4 {background-color: #AEB3FF; border-radius: 5%;} 
+
+.container-fluid {padding: 0;}
+
+.separateur {
+	height: 6px;
+	width: 15%;
+	border: none;
+	border-radius: 30% 30%;
+	background-color: #AEB3FF;
+}
+
+/******* header Menu de navigation *****/
+.header {
+	background-color: #AEB3FF;
+	padding-top: 3%;
+	height: 90px;
+	line-height: 20px;
+}
+
+.image-logo {
+	width: 65px; 
+	height: 65px;
+	margin-top: -9%;
+	padding-right:  5%;
+}
+
+.logo {
+	color: #ffffff;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+	float: left;
+	margin-top: -1%;
+}
+
+.menu { float: right;}
+.menu a { color: #ffffff; margin-right: 15px;}
+.menu a:hover {
+	color: #5d3eff;
+}
+
+/******* Bannière image et contenu texte*/
+.la_banniere {
+	width: 100%;
+	max-width: 100%;
+	margin-top: 1%;
+}
+
+.imgbanniere {
+	width: 100%;
+	max-width: 100%;
+	position: relative;	
+}
+.imgbanniere img {
+	width: 100%;
+	max-width: 100%;
+	max-height: 250px;
+}
+
+.contenue-banniere {
+	position: absolute; /* va se positionner au dessus de imgbanniere*/
+	top: 25%;
+	width: 100%;
+	text-align: center;
+
+}
+.contenue-banniere h1 {
+	color: #ffffff; 
+	font-weight: bold;
+	text-shadow: 13px 13px 20px #02000a;
+	font-size: 2.5em;
+}
+
+#btn-contact {
+	background-color: #AEB3FF;
+	color: #ffffff;
+	margin: 30px auto;
+	font-size: 1.5em;
+	transition: 5.0s;
+}
+#btn-contact:hover {
+	background-color: #5d3eff;
+}
+
+/****** A propos about ************/
+#about-titre {
+	text-align: center;
+	padding-top: 5%;
+}
+
+.about article {
+	margin-top: 1%;
+}
+.about article h2 {
+	text-align: center;
+	margin-bottom: 5%;
+}
+
+.btn-custom{
+	margin-top: 2%;
+	margin-bottom: 5%;
+	margin-left: 42%;	
+	background-color: #f4ca70;
+	color: white;
+	font-size: 1.2em;
+	transition: 2.0s;
+}
+.btn-custom:hover{ margin-left: 42%; }
+
+/******* Portfolio / Projets *******/
+#portfolio-titre {
+	text-align: center;
+	margin: 0 auto;
+	height: 25%;
+	width: 40%;
+	padding-top: -1%;
+	border: none;
+	border-radius: 3%;
+	background-color: #AEB3FF;
+}	
+
+.immage-arriere-plan{
+	background-image: url(../img/banniere2.png);
+	background-repeat: no-repeat;
+	opacity: 1.1;
+}
+.portfolio .item-folio {
+	margin-bottom: 2%;
+}
+.item-folio img {height: 200px;}
+.projets h4 {
+	text-align: center;
+	font-size: 150%;
+}
+.image-projets {
+	height: 75%;
+	width: 100%;
+}
+.image-projets:hover {
+	height: 75%;
+	width: 110%;
+	height: 200px;
+}
+
+/******* footer / contact ********/
+#contact {
+	text-align: center;
+	margin-top: 5%;
+	color: white;
+}
+.separateur-contact {
+	width: 15%;
+	background-color: white;
+}
+.footer { background-color: #AEB3FF;}
+
+.formulaire-contact {
+	max-width: 500px;
+	display: block;
+	margin: 0 auto;
+}
+
+input { margin-bottom: 20px;}
+input[type=text] {
+	height: 30px;
+	width: 100%;
+	border: none;
+}
+
+textarea {
+	height: 100px;
+	width: 500px;
+	border: none;
+	resize: vertical;
+}
+
+/* validation formulaire*/
+input:valid{ border: 1px solid green; }
+input:invalid { border: 1px solid blue;}
+/* footer */
+.legende {
+	margin-top: 3%;
+	margin-bottom: 10%;
+	color: white;
+	text-align: center;
+	font-size: 1.3em;
+}
+span {
+	font-size: 1.3em;
+	margin-right: 1%;
+	margin-left: 1%;
+}
+
+

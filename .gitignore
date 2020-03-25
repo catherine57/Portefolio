@@ -1,0 +1,9 @@
+﻿# ligne démarrant par  `#` est un commentaire.
+
+# Ignore le fichier  'file.ext'
+infos.txt
+script-tuto.js
+
+# Ignore le dossier   .idea/
+
+/bootstrap-3.3.7-dist/
