@@ -23,11 +23,17 @@
 
 	/* banniere */
 	.imgbanniere img {height: 125px;}
-	.contenue-banniere h1 {margin-top:-8%;}
+	.contenue-banniere h1 {margin-top: +2%;}
 	
 	/* a propos */
-    .formations{ margin-left: 15%;}     
-          
+    .formations{ margin-left: 15%;}  
+
+    /* Projets*/ 
+    div.immage-arriere-plan{ 
+		background-image: url(../img/banniere2media.png);
+		max-height: 2000px; 
+    }
+
 	/* contact */
     form.formulaire-contact{ width: 250px; }
     form.formulaire-contact textarea{width: 250px;}           
@@ -103,7 +109,7 @@ h4 {background-color: #AEB3FF; border-radius: 5%;}
 .imgbanniere img {
 	width: 100%;
 	max-width: 100%;
-	max-height: 250px;
+	height: 250px;
 }
 
 .contenue-banniere {
